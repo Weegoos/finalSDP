@@ -31,27 +31,27 @@
 ## Main Body:
 + Include explanations of each feature and design pattern:
   + *In this project, "Factory Method" is responsible for creating various types of goods:*
-    + ![](photo/menuImg.jpg)
+    + ![](Final/mainPage/photo/menuImg.jpg)
        ### In the product menu, the customer can choose the type of product that is most interested in.
-    +  ![](photo/productImg.jpg)
+    +  ![](Final/mainPage/photo/productImg.jpg)
        ### After this process, a certain number of products will appear, and customers can view the product.
   + *Decorator Design Pattern responds to adding additional options to products:*
-    + ![](photo/blazerImg.jpg)
-     ![](photo/shirtImg.jpg)
+    + ![](Final/mainPage/photo/blazerImg.jpg)
+     ![](Final/mainPage/photo/shirtImg.jpg)
       ### By clicking on the "Info" button, customers can view additional information and options about the product.
   + *The observer design pattern tracks changes in the condition of the goods:*
-    + ![](photo/notificationImg.jpg)
+    + ![](Final/mainPage/photo/notificationImg.jpg)
   + *In this project, Singleton Design Pattern is used to manage the user's shopping cart:*
-    + ![](photo/singletonImg.jpg)
+    + ![](Final/mainPage/photo/singletonImg.jpg)
        ### By clicking on the "Add" button, the customer can add the product to the user's cart.
   + *In this project, the "Strategy Design Pattern" is used to calculate the cost of delivery:*
-    + ![](photo/deliveryImg.jpg)
+    + ![](Final/mainPage/photo/deliveryImg.jpg)
       ### The user must specify the distance and select the type of transport, after which the amount that the user must pay in order to use the delivery function will be automatically displayed.
   + *In this project, "Adapter" is used for integration with various payment systems:*
-    +  ![](photo/adapterImg.jpg)
+    +  ![](Final/mainPage/photo/adapterImg.jpg)
 ---
   + Include UML diagram to illustrate the structure of the design patterns used in your project:
-    + ![](photo/UMLdiagram.png)
+    + ![](Final/mainPage/photo/UMLdiagram.png)
 ---
 ## Conclusion:
 + *Key points of your project. Mention used patterns:*

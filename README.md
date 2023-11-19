@@ -84,3 +84,5 @@
   + To make the site more adaptive and convenient.
   + Adding a registration page.
   + Adding a product sorting function by price/by date.
+
+[1]: https://v2.vuejs.org/v2/guide/deployment.html

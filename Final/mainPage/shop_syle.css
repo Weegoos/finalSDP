@@ -1,0 +1,337 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+:root{
+    --headerColor: #fafafa
+}
+
+.header{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 5vw;
+    border: solid #fff 1px;
+    background: var(--headerColor);
+    box-shadow: 1px 2px 1px 0px;
+}
+
+.header img{
+    position: absolute;
+}
+
+.shopIcon{
+    top: 1vw;
+    left: 4vw;
+    width: 3vw;
+    height: 3vw;
+}
+
+.locationIcon{
+    top: 1.5vw;
+    left: 72vw;
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+.menuIcon{
+    top: 1.6vw;
+    left: 85.5vw;
+    width: 1.5vw;
+    height: 1.5vw;
+    cursor: pointer;
+}
+
+.header span{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 1.5vw;
+}
+
+.navigator span{
+    cursor: pointer;
+}
+
+.companyName{
+    left: 9vw;
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+.userLocationText{
+    left: 74vw;
+    font-size: 1.1vw;
+}
+
+.userDeliveryText{
+    left: 80.5vw;
+    font-size: 1.1vw;
+}
+
+.basketText{
+    left: 73.5vw;
+    font-size: 1.1vw;
+}
+
+.userMenuIcon{
+    left: 88vw;
+    font-size: 1.1vw;
+}
+
+.userDeliveryIcon{
+    top: 1.5vw;
+    left: 78.5vw;
+    width: 1.5vw;
+    height: 1.5vw;
+    cursor: pointer;
+}
+
+.basketIcon{
+    top: 1.5vw;
+    left: 71.5vw;
+    width: 1.5vw;
+    height: 1.5vw;
+    cursor: pointer;
+}
+
+#searchItem{
+    position: absolute;
+    top: 1.1vw;
+    left: 80vw;
+    width: 17vw;
+    outline: none;
+    border: 1px solid #fafafa;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1vw;
+    height: 2.5vw;
+}
+
+.productContainer{
+    /* position: absolute; */
+    top: 14vw;
+}
+
+#productList{
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    overflow-y: scroll;
+    top: 14vw;
+}
+
+.buyBtnStyle{
+    width: 4vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    background: 	#9FE2BF;
+}
+
+.paymentPage{
+    position: absolute;
+    top: 12vw;
+    left: 26vw;
+    border: solid #fafafa 1px;
+    background: #fafafa;
+    width: 45vw;
+    height: 20vw;
+    border-radius: 8px;
+    box-shadow: 1px 2px 1px 0px;
+    display: none;
+}
+.buttonClosePaymentPage{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0.5vw;
+    left: 43.5vw;
+    cursor: pointer;
+    /* display: none; */
+}
+
+.chooseCorrectItems{
+    position: absolute;
+    top: 6vw;
+    left: 35vw;
+    border: solid #fafafa 1px;
+    background: #fafafa;
+    width: 30vw;
+    height: 35vw;
+    border-radius: 8px;
+    box-shadow: 1px 2px 1px 0px;
+    display: none;
+}
+
+.btnCloseChoosePage{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0.5vw;
+    left: 28.5vw;
+    cursor: pointer;
+    background: #fafafa;
+    font-size: 1vw;
+}
+
+.chooseCorrectItems span{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.definitionText{
+    font-size: 1vw;
+    top: 1.3vw;
+    left: 0.5vw;
+    text-align: center;
+}
+
+.chooseCorrectItems input{
+    position: absolute;
+    width: 15vw;
+    left: 7vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1vw;
+    height: 2.5vw;
+}
+
+#hatInput{
+    top: 7vw
+}
+
+#menswearInput{
+    top: 11vw;
+}
+
+#notificationPart{
+    position: absolute;
+    top: 5vw;
+    width: 25vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8vw;
+    left: 75vw;
+    display: none;
+}
+
+.deliveryDiv{
+    position: absolute;
+    top: 12vw;
+    left: 26vw;
+    border: solid #fafafa 1px;
+    background: #fafafa;
+    width: 45vw;
+    height: 20vw;
+    border-radius: 8px;
+    box-shadow: 1px 2px 1px 0px;
+    display: none;
+}
+
+.deliveryDiv input{
+    position: absolute;
+    width: 16vw;
+    left: 15vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1vw;
+    height: 2.5vw;
+
+}
+
+#distance{
+ top: 4vw;   
+}
+
+#typeTransport{
+    top: 7.5vw;
+}
+
+.deliveryText{
+    position: absolute;
+    font-size: 1vw;
+    top: 0.5vw;
+    left: 2.5vw;
+    /* text-align: center; */
+}
+
+#payBtn{
+    position: absolute;
+    top: 15vw;
+    left: 17vw;
+    height: 2.5vw;
+    /* width: 10vw; */
+    font-size: 1.2vw;
+}
+
+.sumMoney{
+    position: absolute;
+    top: 13vw;
+    left: 16vw;
+}
+
+.imgCLass{
+    position: absolute;
+    top: 1vw;
+    left: 25vw;
+    width: 10vw;
+    height: 10vw;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.paymentPage span{
+    position: absolute;
+    left: 1.5vw;
+    font-size: 1.1vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.productName{
+    top: 1.2vw;
+}
+
+.yearProduct{
+    top: 2.8vw;
+}
+
+.ProductCompanyName{
+    top: 4.4vw;
+}
+
+.discount{
+    top: 6vw;
+}
+
+#deliveryText{
+    top: 7.6vw;
+}
+
+.countryName{
+    top: 9.2vw;
+}
+
+.cerficateStatus{
+    top: 10.8vw;
+}
+
+.basketButton{
+    position: absolute;
+    left: 5vw;
+    width: 4vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    background: 	#FFC300 ;
+}
+
+.basketDiv{
+    position: absolute;
+    top: 12vw;
+    left: 26vw;
+    border: solid #fafafa 1px;
+    background: #fafafa;
+    width: 45vw;
+    height: 20vw;
+    border-radius: 8px;
+    box-shadow: 1px 2px 1px 0px;
+    display: none;
+    overflow-y: scroll;
+}

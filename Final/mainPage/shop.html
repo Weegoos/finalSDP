@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Drop</title>
+    <link rel="stylesheet" href="shop_syle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyNHka5UXFGTooBNlrhgXAMViPrQG6171p8yi9QUj8Hd8EHy9PsFkODLfZa0GyvVIMQXs&usqp=CAU">
+    <script src="main.js" defer></script>
+    <script src="singleton.js" defer></script>
+    <script src="decorator.js"> defer</script>
+    <script src="observer.js" defer></script>
+    <script src="factory.js" defer></script>
+    <script src="strategy.js" defer></script>
+    <script src="adapter.js" defer></script>
+</head>
+<body>
+    <div class="mainContent">
+        <div class="wrapper">
+            <div class="header">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyNHka5UXFGTooBNlrhgXAMViPrQG6171p8yi9QUj8Hd8EHy9PsFkODLfZa0GyvVIMQXs&usqp=CAU" alt="" class="shopIcon">
+                <span class="companyName">Shop Drop</span>
+                <div class="navigator">
+                    <!-- <img src="C:\Users\Батыр\Desktop\Design Pattern\Final\icon\free-icon-location-pointer-2390582.png" alt="" class="locationIcon">
+                    <span class="userLocationText">Location</span>
+                    <input type="text" class="form-control" id="searchItem" placeholder="Search..."> -->
+                    <img class="menuIcon" @click="menu"  src="C:\Users\Батыр\Desktop\Design Pattern\Final\icon\free-icon-menu-bar-6328133.png" alt="">
+                    <span class="userMenuIcon">Menu</span>
+                    <img src="C:\Users\Батыр\Desktop\Design Pattern\Final\icon\free-icon-delivery-package-opened-46021.png" alt="" class="userDeliveryIcon" @click="deliveryPage">
+                    <span class="userDeliveryText">Delivery</span>
+                    <img class="basketIcon" src="C:\Users\Батыр\Desktop\Design Pattern\Final\icon\free-icon-shopping-cart-481384.png" alt="">
+                    <span class="basketText" @click="basketBtn">Basket</span>
+                </div>
+            </div>
+
+            <div class="productContainer">
+                <ul id="productList" class="form-control">
+                    <!-- <li></li> -->
+                    
+                </ul>
+            </div>
+
+            <div class="chooseCorrectItems" ref="menu">
+                <button type="button" class="btnCloseChoosePage">X</button>
+                <span class="definitionText">Choose the types of clothes you are interested in to save time during the search. Write in each field <code>true</code> if you are interested in this type of clothing if not, write <code>false</code></span>
+                <input type="text" class="form-control" id="hatInput" placeholder="Hat..." @keyup="checkLetter" v-model="hat" >
+                <input type="text" class="form-control" id="menswearInput" placeholder="Men's clothing..." v-model="menClothing" @keyup="checkLetter">
+            </div>
+
+            <div class="paymentPage">
+                <span class="productName"></span><br>
+                <span class="yearProduct" id="subType"></span><br>
+                <span class="ProductCompanyName"></span><br>
+                <span class="discount"></span>
+                <span id="deliveryText"></span>
+                <span class="countryName"></span>
+                <span class="cerficateStatus"></span>
+                <p class="buttonClosePaymentPage" @click="buttonClosePaymentPage">X</p>
+                <img class="imgCLass"  alt="">
+            </div>
+
+            <div class="deliveryDiv" ref="deliveryDiv">
+                <span class="deliveryText">Choose the type of transport and specify the distance to calculate the cost of the service!</span>
+                <input type="number" id="distance" class="form-control" min="0" placeholder="Specify the distance (km)" v-model="distance" @keyup="putDistance">
+                <input type="text" class="form-control" list="transport" id="typeTransport" placeholder="Specify the type of transport" v-model="typeofTransport" @keyup="putTransport">
+                <datalist id="transport">
+                    <option value="Courier">Courier</option>
+                    <option value="Taxi">Taxi</option>
+                </datalist>
+                <button class="btn btn-success" id="payBtn" @click="payDelivery">Pay for delivery</button>
+                <span class="sumMoney" ref="sumMoney"></span>
+            </div>
+
+            <div class="alert alert-success" id="notificationPart" role="alert">
+                
+              </div>
+
+              <div class="basketDiv" ref="basketMenu">
+                <ul id="basketList">
+
+                </ul>
+              </div>
+        </div>
+    </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+
+</body>
+</html>
+

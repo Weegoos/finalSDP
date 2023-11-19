@@ -85,4 +85,9 @@
   + Adding a registration page.
   + Adding a product sorting function by price/by date.
 
-[1]: https://v2.vuejs.org/v2/guide/deployment.html
+---
+
+## **References:**
+ #### https://v2.vuejs.org/v2/guide/deployment.html
+ #### https://www.youtube.com/watch?v=NXNf9aYTCZ0
+ #### https://www.youtube.com/watch?v=syrGPPekLHQ
